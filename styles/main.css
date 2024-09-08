@@ -1,0 +1,53 @@
+/* MAIN */
+
+main {
+    padding-top: 145px;
+}
+
+/* MAIN HEADER */
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 35px;
+}
+
+.main-header-svg {
+    display: flex;
+}
+
+.main-header-svg-itself {
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.108);
+}
+
+.main-header-text {
+    font-family: var(--f-chillax-medium);
+    font-size: 4rem;
+    text-align: center;
+    line-height: 70px;
+    color: rgb(64,64,64);
+}
+
+.try-for-free-button-container {
+    display: flex;
+}
+
+.try-for-free-button {
+    border: 0;
+    background-color: rgb(0, 102, 255);
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+    font-family: var(--f-inter);
+    padding: 11px 14px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.try-for-free-button:hover {
+    background-color: rgb(0, 93, 231);
+}

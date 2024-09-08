@@ -9,6 +9,10 @@ nav {
     padding-inline: 200px;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 /* LOGO */
@@ -16,14 +20,19 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    column-gap: 8px;
+    text-decoration: none;
 }
 
-.logo-itself {
-    text-decoration: none;
+.logo-svg {
+    border-radius: 0.2rem;
+}
+
+.logo-text {
     color: black;
     font-family: var(--f-inter);
-    text-transform: uppercase;
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 /* LINKS */
@@ -58,8 +67,8 @@ nav {
     text-decoration: none;
     color: white;
     font-family: var(--f-inter);
-    padding: 9px 14px;
-    border-radius: 1.1rem;
+    padding: 11px 14px;
+    border-radius: 1.5rem;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: background-color 300ms;
@@ -182,7 +191,7 @@ nav {
 }
 
 .menu-button-text {
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 400;
     color: white;
 }
