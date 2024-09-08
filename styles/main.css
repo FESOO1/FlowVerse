@@ -2,7 +2,6 @@
 
 main {
     padding-top: 145px;
-    padding-bottom: 100px;
 }
 
 /* MAIN HEADER */
@@ -166,9 +165,227 @@ main {
     display: flex;
     align-items: center;
     column-gap: 7px;
+    color: rgb(64,64,64);
 }
 
 .second-header-stick-included-svg {
     width: 20px;
     height: 20px;
+    color: gray;
+}
+
+/* THIRD HEADER */
+
+.third-header {
+    padding-top: 50px;
+}
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding-bottom: 100px;
+    background: linear-gradient(white, #f8f8f8);
+}
+
+.join-container > h3 {
+    color: rgb(64,64,64);
+    font-family: var(--f-inter);
+    font-size: 1.5rem;
+}
+
+.join-button {
+    border: 0;
+    background-color: rgb(0, 102, 255);
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+    font-family: var(--f-inter);
+    padding: 11px 14px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.join-button:hover {
+    background-color: rgb(0, 93, 231);
+}
+
+/* FOURTH HEADER */
+
+.fourth-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.statistics {
+    margin-top: 80px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.statistic {
+    padding-block: 10px;
+    border-left: 1px dashed rgba(64, 64, 64, 0.2);
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    font-family: var(--f-inter);
+}
+
+.statistic-number {
+    font-size: 2rem;
+    font-weight: 600;
+    color: gray;
+}
+
+.statistic-header {
+    color: rgb(64,64,64);
+    font-size: 1.5rem;
+}
+
+.statistic-paragraph {
+    font-size: 1.1rem;
+    color: gray;
+    line-height: 25px;
+}
+
+/* PLAN */
+
+.plan {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+}
+
+.fourth-header-text-itself {
+    font-family: var(--f-chillax-medium);
+    font-size: 3rem;
+    text-align: center;
+    line-height: 55px;
+    color: rgb(64,64,64);
+}
+
+.plan-itself {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.108);
+    padding: 35px;
+    border-radius: 1rem;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    row-gap: 35px;
+    font-family: var(--f-inter);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+    position: relative;
+}
+
+.plan-itself::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.108);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    scale: 0.80;
+    transform: translateX(-150px) rotateZ(-8deg);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+}
+
+.plan-itself::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.108);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    scale: 0.80;
+    transform: translateX(150px) rotateZ(8deg);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+}
+
+.plan-price {
+    color: rgb(100, 100, 100);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.plan-price-itself {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(64,64,64);
+}
+
+.plan-paragraph {
+    color: rgb(100, 100, 100);
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.plan-divider {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.108);
+}
+
+.plan-includes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.plan-inclues-inner {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.plan-inclues-inner-svg {
+    width: 15px;
+    height: 15px;
+    fill: rgb(100, 100, 100);
+}
+
+.plan-inclues-inner-text {
+    color: rgb(64,64,64);
+    font-weight: 500;
+}
+
+.get-started-button {
+    border: 0;
+    background-color: rgb(0, 102, 255);
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+    font-family: var(--f-inter);
+    padding: 11px 14px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 300ms;
+    display: flex;
+    justify-content: center;
+}
+
+.get-started-button:hover {
+    background-color: rgb(0, 93, 231);
 }
