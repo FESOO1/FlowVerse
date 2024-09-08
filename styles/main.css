@@ -133,6 +133,10 @@ main {
     color: rgb(255, 207, 63);
 }
 
+.second-header-sticky-svg-itself-purple {
+    color: rgb(255, 43, 188);
+}
+
 .second-header-stick-info {
     display: flex;
     flex-direction: column;
@@ -147,7 +151,7 @@ main {
 .second-header-sticky-paragraph {
     line-height: 25px;
     color: gray;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .second-header-stick-included {
