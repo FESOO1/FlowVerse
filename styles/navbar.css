@@ -20,7 +20,7 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    column-gap: 8px;
+    column-gap: 5px;
     text-decoration: none;
 }
 
@@ -31,8 +31,8 @@ nav {
 .logo-text {
     color: black;
     font-family: var(--f-inter);
+    font-family: var(--f-chillax-medium);
     font-size: 1.2rem;
-    font-weight: 600;
 }
 
 /* LINKS */

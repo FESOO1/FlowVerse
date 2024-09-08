@@ -2,6 +2,7 @@
 
 main {
     padding-top: 145px;
+    padding-bottom: 100px;
 }
 
 /* MAIN HEADER */
@@ -50,4 +51,120 @@ main {
 
 .try-for-free-button:hover {
     background-color: rgb(0, 93, 231);
+}
+
+.main-header-image {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-header-image-itself {
+    width: 35%;
+    min-width: 550px;
+}
+
+/* SECOND HEADER */
+
+.second-header {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.second-header-text {
+    display: flex;
+    justify-content: center;
+}
+
+.second-header-text-itself {
+    font-family: var(--f-chillax-medium);
+    font-size: 3rem;
+    text-align: center;
+    line-height: 55px;
+    color: rgb(64,64,64);
+}
+
+.second-header-sticky-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    padding-bottom: 200px;
+}
+
+.second-header-sticky {
+    position: sticky;
+    top: 150px;
+    width: 750px;
+    min-height: 350px;
+    border-radius: 2rem;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.108);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.02);
+    font-family: var(--f-inter);
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: white;
+}
+
+.second-header-sticky:nth-of-type(2) {
+    transform: rotateZ(-3deg);
+}
+
+.second-header-sticky:nth-of-type(3) {
+    transform: rotateZ(5deg);
+}
+
+.second-header-sticky-svg {
+    display: flex;
+}
+
+.second-header-sticky-svg-itself {
+    width: 26px;
+    height: 26px;
+    color: rgb(16, 112, 255);
+}
+
+.second-header-sticky-svg-itself-yellow {
+    color: rgb(255, 207, 63);
+}
+
+.second-header-stick-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.second-header-sticky-subheader {
+    font-size: 1.3rem;
+    color: rgb(64,64,64);
+}
+
+.second-header-sticky-paragraph {
+    line-height: 25px;
+    color: gray;
+    font-weight: 500;
+}
+
+.second-header-stick-included {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+}
+
+.second-header-stick-included-span {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+
+.second-header-stick-included-svg {
+    width: 20px;
+    height: 20px;
 }
