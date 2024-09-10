@@ -12,7 +12,6 @@ footer {
 .footer-logo {
     display: flex;
     align-items: flex-start;
-    
 }
 
 .footer-logo-itself {
@@ -56,4 +55,52 @@ footer {
 
 .footer-links-inner-link:hover {
     color: black;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1300px) {
+    footer {
+        padding-inline: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    footer {
+        padding-inline: 100px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    footer {
+        padding-inline: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        padding-inline: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-links {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .footer-logo-svg {
+        display: none;
+    }
+    .footer-logo {
+        align-items: center;
+    }
+    .footer-logo-text {
+        font-size: 1.5rem;
+    }
+    .footer-links-inner {
+        align-items: center;
+    }
 }

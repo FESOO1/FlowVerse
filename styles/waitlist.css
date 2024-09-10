@@ -73,7 +73,6 @@ main {
     border: 1px solid rgb(0, 102, 255);
 }
 
-
 .subscribe-now-button {
     border: 0;
     background-color: rgb(0, 102, 255);
@@ -184,4 +183,70 @@ main {
     color: rgb(115, 115, 115);
     line-height: 25px;
     font-size: 1.2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .benefits-inner {
+        width: 100%;
+        padding-inline: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .benefits-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .benefits-inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-header-paragraph > br {
+        display: none;
+    }
+    .benefits-inner {
+        padding-inline: 0;
+    }
+    .email-address-form {
+        width: 100%;
+    }
+    main {
+        padding-inline: 20px;
+    }
+    .main-header-text {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    .users {
+        flex-direction: column;
+        row-gap: 35px;
+    }
+    .users-image {
+        margin-top: 10px;
+    }
+    .users-image-itself {
+        width: 38px;
+        height: 38px;
+    }
+    .users-paragraph {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .subscribe-now-button {
+        padding: 0;
+    }
+    .email-address-form {
+        grid-template-columns: 1fr 120px;
+    }
+    .email-address-input {
+        width: 100%;
+    }
 }
