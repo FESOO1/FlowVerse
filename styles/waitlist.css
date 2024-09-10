@@ -27,7 +27,7 @@ main {
 }
 
 .main-header-text {
-    font-family: var(--f-chillax-medium);
+    font-family: var(--f-satoshi-medium);
     font-size: 4rem;
     text-align: center;
     line-height: 70px;
@@ -35,9 +35,10 @@ main {
 }
 
 .main-header-paragraph {
-    font-size: 1.1rem;
-    font-family: var(--f-inter);
+    font-size: 1.2rem;
+    font-family: var(--f-satoshi);
     line-height: 25px;
+    font-weight: 600;
     text-align: center;
     color: rgb(100,100,100);
 }
@@ -59,9 +60,15 @@ main {
     background-color: transparent;
     border-radius: 2rem;
     padding-left: 13px;
-    font-family: var(--f-inter);
+    font-family: var(--f-satoshi);
+    font-weight: 600;
     outline: none;
     border: 1px solid rgba(0, 102, 255,0);
+}
+
+.email-address-input::placeholder {
+    color: gray;
+    font-size: 1rem;
 }
 
 .email-address-input:focus-within {
@@ -75,7 +82,7 @@ main {
     font-size: 0.8rem;
     text-decoration: none;
     color: white;
-    font-family: var(--f-inter);
+    font-family: var(--f-satoshi-medium);
     padding: 0 14px;
     border-radius: 1.5rem;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
@@ -127,8 +134,9 @@ main {
 
 .users-paragraph {
     color: rgb(100,100,100);
-    font-family: var(--f-inter);
+    font-family: var(--f-satoshi);
     font-size: 1rem;
+    font-weight: 600;
 }
 
 /* BENEFITS */
@@ -151,21 +159,34 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    font-family: var(--f-inter);
 }
 
 .benefit > svg {
     margin-bottom: 10px;
+}
+
+.benefit-svg-blue {
     color: rgb(0, 102, 255);
+}
+
+.benefit-svg-yellow {
+    color: rgb(255, 200, 0);
+}
+
+.benefit-svg-purple {
+    color: rgb(255, 105, 240);
 }
 
 .benefit-text {
     color: rgb(64,64,64);
+    font-family: var(--f-satoshi-medium);
     font-size: 1.5rem;
 }
 
 .benefit-paragraph {
-    color: rgb(100,100,100);
-    line-height: 22px;
-    font-size: 1.1rem;
+    color: rgb(115, 115, 115);
+    line-height: 25px;
+    font-size: 1.2rem;
+    font-family: var(--f-satoshi);
+    font-weight: 600;
 }
