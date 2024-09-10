@@ -36,9 +36,8 @@ main {
 
 .main-header-paragraph {
     font-size: 1.2rem;
-    font-family: var(--f-satoshi);
+    font-family: var(--f-inter);
     line-height: 25px;
-    font-weight: 600;
     text-align: center;
     color: rgb(100,100,100);
 }
@@ -60,8 +59,7 @@ main {
     background-color: transparent;
     border-radius: 2rem;
     padding-left: 13px;
-    font-family: var(--f-satoshi);
-    font-weight: 600;
+    font-family: var(--f-inter);
     outline: none;
     border: 1px solid rgba(0, 102, 255,0);
 }
@@ -82,7 +80,7 @@ main {
     font-size: 0.8rem;
     text-decoration: none;
     color: white;
-    font-family: var(--f-satoshi-medium);
+    font-family: var(--f-inter);
     padding: 0 14px;
     border-radius: 1.5rem;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
@@ -97,6 +95,7 @@ main {
 .users {
     display: flex;
     align-items: center;
+    font-family: var(--f-inter);
 }
 
 .users-image {
@@ -134,9 +133,7 @@ main {
 
 .users-paragraph {
     color: rgb(100,100,100);
-    font-family: var(--f-satoshi);
     font-size: 1rem;
-    font-weight: 600;
 }
 
 /* BENEFITS */
@@ -159,6 +156,7 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    font-family: var(--f-inter);
 }
 
 .benefit > svg {
@@ -179,7 +177,6 @@ main {
 
 .benefit-text {
     color: rgb(64,64,64);
-    font-family: var(--f-satoshi-medium);
     font-size: 1.5rem;
 }
 
@@ -187,6 +184,4 @@ main {
     color: rgb(115, 115, 115);
     line-height: 25px;
     font-size: 1.2rem;
-    font-family: var(--f-satoshi);
-    font-weight: 600;
 }

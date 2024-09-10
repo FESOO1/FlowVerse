@@ -23,7 +23,7 @@ main {
 }
 
 .main-header-text {
-    font-family: var(--f-chillax-medium);
+    font-family: var(--f-satoshi-medium);
     font-size: 4rem;
     text-align: center;
     line-height: 70px;
@@ -79,7 +79,7 @@ main {
 }
 
 .second-header-text-itself {
-    font-family: var(--f-chillax-medium);
+    font-family: var(--f-satoshi-medium);
     font-size: 3rem;
     text-align: center;
     line-height: 55px;
@@ -269,7 +269,7 @@ main {
 }
 
 .fourth-header-text-itself {
-    font-family: var(--f-chillax-medium);
+    font-family: var(--f-satoshi-medium);
     font-size: 3rem;
     text-align: center;
     line-height: 55px;
@@ -406,7 +406,7 @@ main {
 }
 
 .faq-text-itself {
-    font-family: var(--f-chillax-medium);
+    font-family: var(--f-satoshi-medium);
     font-size: 3rem;
     text-align: center;
     line-height: 55px;
