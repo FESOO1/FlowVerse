@@ -27,12 +27,12 @@ footer {
 
 .footer-logo-text {
     color: black;
-    font-family: var(--f-chillax-medium);
+    font-family: var(--f-satoshi-medium);
     font-size: 1.2rem;
 }
 
 .footer-links {
-    font-family: var(--f-inter);
+    font-family: var(--f-satoshi);
     display: flex;
     column-gap: 150px;
 }
@@ -47,10 +47,16 @@ footer {
     color: rgb(64,64,64);
 }
 
+.footer-links-inner-text {
+    font-family: var(--f-satoshi-medium);
+    font-size: 1.4rem;
+}
+
 .footer-links-inner-link {
     text-decoration: none;
     color: rgb(64,64,64);
     transition: color 300ms;
+    font-weight: 600;
 }
 
 .footer-links-inner-link:hover {

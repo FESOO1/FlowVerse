@@ -30,8 +30,7 @@ nav {
 
 .logo-text {
     color: black;
-    font-family: var(--f-inter);
-    font-family: var(--f-chillax-medium);
+    font-family: var(--f-satoshi-medium);
     font-size: 1.2rem;
 }
 
