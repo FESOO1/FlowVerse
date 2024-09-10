@@ -261,11 +261,13 @@ main {
 /* PLAN */
 
 .plan {
+    width: 100%;
     margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 60px;
+    overflow: hidden;
 }
 
 .fourth-header-text-itself {
@@ -434,6 +436,7 @@ main {
     justify-content: space-between;
     width: 100%;
     height: 70px;
+    column-gap: 10px;
 }
 
 .question-text {
@@ -460,4 +463,141 @@ main {
 .faq-itself-js {
     height: auto;
     padding-bottom: 10px;
+}
+
+/* MEDIA QEURIES */
+
+@media (max-width: 1200px) {
+    .statistics {
+        width: 100%;
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .second-header-sticky {
+        width: 85%;
+    }
+    .faq-itself,
+    .faq-divider {
+        width: 100%;
+    }
+    .faq-themselves {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .main-header-image-itself {
+        width: 80%;
+        min-width: auto;
+    }
+    .statistics {
+        grid-template-columns: 1fr;
+        row-gap: 33px;
+    }
+    .main-header-text {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    .second-header-text-itself,
+    .fourth-header-text-itself,
+    .faq-text-itself {
+        font-size: 2.3rem;
+        line-height: 45px;
+    }
+    .second-header-stick-included {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .plan-itself,
+    .second-header-sticky {
+        width: 100%;
+    }
+    .join-container > h3 > br {
+        display: none;
+    }
+    .join-container > h3 {
+        text-align: center;
+    }
+    .join-container,
+    .plan,
+    .second-header-sticky-container {
+        padding-inline: 20px;
+    }
+    .second-header-sticky:nth-of-type(2) {
+        transform: rotateZ(-2deg);
+    }
+    
+    .second-header-sticky:nth-of-type(3) {
+        transform: rotateZ(2deg);
+    }
+    .second-header-text-itself,
+    .fourth-header-text-itself,
+    .faq-text-itself {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .main-header-text {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    .second-header-sticky {
+        top: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .second-header-sticky {
+        padding: 25px;
+        row-gap: 20px;
+    }
+    .faq-themselves,
+    .join-container,
+    .plan,
+    .second-header-sticky-container,
+    .statistics {
+        padding-inline: 15px;
+    }
+    .second-header-text-itself,
+    .fourth-header-text-itself,
+    .faq-text-itself {
+        font-size: 1.7rem;
+        line-height: 35px;
+    }
+    .main-header-text {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .statistic-header,
+    .join-container > h3 {
+        font-size: 1.3rem;
+    }
+    .statistic-paragraph {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .faq-themselves,
+    .join-container,
+    .plan,
+    .statistics {
+        padding-inline: 10px;
+    }
+    .second-header-sticky-container {
+        padding-inline: 20px;
+    }
+    .plan-itself {
+        padding: 20px 25px;
+        row-gap: 15px;
+    }
 }
